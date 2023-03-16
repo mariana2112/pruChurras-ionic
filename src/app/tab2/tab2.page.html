@@ -1,11 +1,38 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title class="ion-text-center">
+      Contador de Truco
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="corfundo">
+
+  <ion-grid>
+    <h2>VALENDO:</h2>
+
+    <ion-row class="row-1">
+      <ion-col><ion-button>1</ion-button></ion-col>
+      <ion-col><ion-button>3</ion-button></ion-col>
+      <ion-col><ion-button>6</ion-button></ion-col>
+      <ion-col><ion-button>9</ion-button></ion-col>
+      <ion-col><ion-button>12</ion-button></ion-col>
+    </ion-row>
+    <ion-row class="row-2">
+      <ion-col>
+        <ion-label>Time 1</ion-label>
+        <ion-button class="add"><ion-icon name="add-outline"></ion-icon></ion-button>
+        <h1>0</h1>
+        <ion-button class="remove"><ion-icon name="remove-outline"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-label>Time 2</ion-label>
+        <ion-button class="add"><ion-icon name="add-outline"></ion-icon></ion-button>
+        <h1>0</h1>
+        <ion-button class="remove"><ion-icon name="remove-outline"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 
 </ion-content>
