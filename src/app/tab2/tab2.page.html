@@ -1,38 +1,69 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title class="ion-text-center">
-      Contador de Truco
+  <ion-toolbar class="ion-text-center toolbar">
+    <ion-title>
+      CONTADOR DE TRUCO
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="corfundo">
+<ion-content [fullscreen]="true" class="colortab2">
 
-  <ion-grid>
-    <h2>VALENDO:</h2>
+<ion-grid >
+  <h3>Valendo: {{start}}</h3>
+  <ion-row class="row-1 ion-text-center">
+    <ion-col><ion-button class="btnv" (click)="botaoTruco1()">1</ion-button> </ion-col>
+    <ion-col><ion-button class="btnv" (click)="botaoTruco3()">3</ion-button></ion-col>
+    <ion-col><ion-button class="btnv" (click)="botaoTruco6()">6</ion-button></ion-col>
+  </ion-row>
+  <ion-row class="row-1 ion-text-center">
+    <ion-col><ion-button class="btnv" (click)="botaoTruco9()">9</ion-button></ion-col>
+    <ion-col><ion-button class="btnv" (click)="botaoTruco12()">12</ion-button></ion-col>
+  </ion-row>
+</ion-grid>
 
-    <ion-row class="row-1">
-      <ion-col><ion-button>1</ion-button></ion-col>
-      <ion-col><ion-button>3</ion-button></ion-col>
-      <ion-col><ion-button>6</ion-button></ion-col>
-      <ion-col><ion-button>9</ion-button></ion-col>
-      <ion-col><ion-button>12</ion-button></ion-col>
-    </ion-row>
-    <ion-row class="row-2">
+<ion-grid class="ion-text-center">
+  <ion-row>
+  <ion-label>Time 1</ion-label>
+  <ion-label>Time 2</ion-label>
+</ion-row>
+  <ion-row class="add">
+    <ion-col><ion-button (click)="btadd1()"><ion-icon name="add"/></ion-button></ion-col>
+    <ion-col><ion-button (click)="btadd2()"><ion-icon name="add"/></ion-button></ion-col>
+  </ion-row>
+  <ion-row class="number">
+    <ion-col>{{v1}}</ion-col>
+    <ion-col>{{v2}}</ion-col>
+  </ion-row>
+  <ion-row class="btar">
+    <ion-col><ion-button (click)="btr1()"><ion-icon name="remove"/></ion-button></ion-col>
+    <ion-col><ion-button (click)="btr2()"><ion-icon name="remove"/></ion-button></ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-card class="custom-card">
+  <ion-card-header>
+    <ion-card-title class="ion-text-center">PARTIDAS
+      <ion-icon name="ribbon-outline" color="warning"></ion-icon>
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-row  class="ion-text-center">
       <ion-col>
-        <ion-label>Time 1</ion-label>
-        <ion-button class="add"><ion-icon name="add-outline"></ion-icon></ion-button>
-        <h1>0</h1>
-        <ion-button class="remove"><ion-icon name="remove-outline"></ion-icon></ion-button>
+        <ion-input value="Time 1"></ion-input>
+        <ion-col class="zero">{{a}}</ion-col>
       </ion-col>
       <ion-col>
-        <ion-label>Time 2</ion-label>
-        <ion-button class="add"><ion-icon name="add-outline"></ion-icon></ion-button>
-        <h1>0</h1>
-        <ion-button class="remove"><ion-icon name="remove-outline"></ion-icon></ion-button>
+        <ion-input value="Time 2"></ion-input>
+        <ion-col  class="zero">{{b}}</ion-col>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-card-content>
+</ion-card>
 
+<ion-footer>
+  <ion-toolbar (click)="clear()" class="bc">
+    <ion-title class="ion-text-center">Limpar</ion-title>
+  </ion-toolbar>
+</ion-footer>
 
 </ion-content>

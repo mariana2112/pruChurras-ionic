@@ -1,67 +1,102 @@
-.corfundo{
-  color:#bfc6c7;
+*{
+  font-family: revert-layer;
 }
 
-ion-toolbar {
-  ion-title {
-    font-weight:bolder;
-    color: #13293D;
-  }
-}
-
-.row-1 {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  ion-button {
-    height:40px;
-    width: 40px;
-    font-size: 20px;
-    --background:#247BA0;
-  }
-}
-
-.row-2{
-  ion-button{
-    height:35px;
-    width: 35px;
+.toolbar{
+  --background: #086843;
+  --color: white;
+  ion-title{
     font-size: 15px;
-    --background:#006494;
-    border-radius:100px;
-    .add{
-      color:white;
+    font-weight: 700;
+  }
+}
+
+.colortab2{
+  --background: gray;
+}
+
+h3{
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+$border-color: #ffffff;
+$border-width: 1px;
+.custom-card {
+  background-color: transparent;
+  border: $border-width solid $border-color;
+  width: 230px;
+  margin: 15px;
+  ion-card-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+  }
+  ion-icon{
+    position: absolute;
+    margin-bottom: 8px;
+  }
+  ion-input{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+  }
+  ion-col{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    .zero{
+      margin: 25px;
     }
   }
 }
 
-//texts
-
-h1{
-  font-weight:bolder;
-    color: #13293D;
+.bc{
+  cursor: pointer;
+  --background:#086843;
+  --color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.add{
+  ion-button{
+    --background: #05853a;
+    --color: white;
+  }
 }
 
-h2{
-  font-weight:bolder;
-    color: #13293D;
-    text-align: center;
+.btar{
+  ion-button{
+    --background: #850505;
+    --color: white;
+  }
+}
+
+.number{
+  font-size: 50px;
+  color: #FFFFFF;
 }
 
 ion-label{
-  font-weight: bolder;
-  font-size: 20px;
-  color:  #13293D;
-}
-
-
-ion-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 700;
   justify-content: space-between;
+  display: flex;
+  margin: 0 33px;
 }
 
-ion-col {
-  margin-top: 20px;
+.row-1 {
+  .btnv {
+    --background: #FFFFFF; // cor de fundo branca
+    --border-radius: 5px; // bordas arredondadas de 20px
+    color: #000000; // cor do texto
+    text-transform: uppercase; // transforma o texto em maiúsculas
+    font-weight: bold; // peso da fonte em negrito
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+  }
 }
-
