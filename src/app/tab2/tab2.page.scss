@@ -28,7 +28,6 @@ $border-width: 1px;
   background-color: transparent;
   border: $border-width solid $border-color;
   width: 230px;
-  margin: 15px;
   ion-card-title{
     font-size: 20px;
     font-weight: 700;
@@ -51,6 +50,11 @@ $border-width: 1px;
       margin: 25px;
     }
   }
+}
+
+.card{
+display: flex;
+justify-content: center;
 }
 
 .bc{
@@ -90,13 +94,24 @@ ion-label{
 
 .row-1 {
   .btnv {
-    --background: #FFFFFF; // cor de fundo branca
-    --border-radius: 5px; // bordas arredondadas de 20px
-    color: #000000; // cor do texto
-    text-transform: uppercase; // transforma o texto em maiúsculas
-    font-weight: bold; // peso da fonte em negrito
+    --background: #FFFFFF;
+    --border-radius: 5px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
     height: 40px;
     width: 40px;
-    margin: 0 10px;
+  }
+}
+
+.row2{
+  .bt2 {
+    --background: #FFFFFF;
+    --border-radius: 5px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
   }
 }

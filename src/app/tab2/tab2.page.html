@@ -15,9 +15,9 @@
     <ion-col><ion-button class="btnv" (click)="botaoTruco3()">3</ion-button></ion-col>
     <ion-col><ion-button class="btnv" (click)="botaoTruco6()">6</ion-button></ion-col>
   </ion-row>
-  <ion-row class="row-1 ion-text-center">
-    <ion-col><ion-button class="btnv" (click)="botaoTruco9()">9</ion-button></ion-col>
-    <ion-col><ion-button class="btnv" (click)="botaoTruco12()">12</ion-button></ion-col>
+  <ion-row class="row2 ion-text-center">
+    <ion-col  size="2" offset="4"><ion-button class="bt2" (click)="botaoTruco9()">9</ion-button></ion-col>
+    <ion-col  size="2"><ion-button class="bt2" (click)="botaoTruco12()">12</ion-button></ion-col>
   </ion-row>
 </ion-grid>
 
@@ -40,6 +40,7 @@
   </ion-row>
 </ion-grid>
 
+<div class="card">
 <ion-card class="custom-card">
   <ion-card-header>
     <ion-card-title class="ion-text-center">PARTIDAS
@@ -59,6 +60,7 @@
     </ion-row>
   </ion-card-content>
 </ion-card>
+</div>
 
 <ion-footer>
   <ion-toolbar (click)="clear()" class="bc">
