@@ -3,7 +3,7 @@
 }
 
 .toolbar{
-  --background: #086843;
+  --background: #1E5128;
   --color: white;
   ion-title{
     font-size: 15px;
@@ -12,7 +12,7 @@
 }
 
 .colortab2{
-  --background: gray;
+  --background: #2e2e2e;
 }
 
 h3{
@@ -31,7 +31,9 @@ $border-width: 1px;
   ion-card-title{
     font-size: 20px;
     font-weight: 700;
-    color: #000000;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
   }
   ion-icon{
     position: absolute;
@@ -40,12 +42,12 @@ $border-width: 1px;
   ion-input{
     font-size: 18px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
   }
   ion-col{
     font-size: 18px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     .zero{
       margin: 25px;
     }
@@ -59,21 +61,21 @@ justify-content: center;
 
 .bc{
   cursor: pointer;
-  --background:#086843;
+  --background:#1E5128;
   --color: white;
   font-size: 20px;
   font-weight: 700;
 }
 .add{
   ion-button{
-    --background: #05853a;
+    --background: #4E9F3D;
     --color: white;
   }
 }
 
 .btar{
   ion-button{
-    --background: #850505;
+    --background: #C02739;
     --color: white;
   }
 }
@@ -83,35 +85,43 @@ justify-content: center;
   color: #FFFFFF;
 }
 
-ion-label{
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 700;
-  justify-content: space-between;
-  display: flex;
-  margin: 0 33px;
-}
 
 .row-1 {
   .btnv {
     --background: #FFFFFF;
-    --border-radius: 5px;
+    --border-radius: 100px;
     color: #000000;
-    text-transform: uppercase;
     font-weight: bold;
     height: 40px;
     width: 40px;
+
   }
 }
 
 .row2{
   .bt2 {
     --background: #FFFFFF;
-    --border-radius: 5px;
+    --border-radius: 100px;
     color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     height: 40px;
     width: 40px;
+
   }
 }
+
+.linha{
+  --background: #FFFFFF;
+}
+
+ion-label{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 45px;
+  }
+
+

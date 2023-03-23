@@ -11,13 +11,13 @@
 <ion-grid >
   <h3>Valendo: {{start}}</h3>
   <ion-row class="row-1 ion-text-center">
-    <ion-col><ion-button class="btnv" (click)="botaoTruco1()">1</ion-button> </ion-col>
-    <ion-col><ion-button class="btnv" (click)="botaoTruco3()">3</ion-button></ion-col>
-    <ion-col><ion-button class="btnv" (click)="botaoTruco6()">6</ion-button></ion-col>
+    <ion-col size="1.5"  offset="1.2"><ion-button class="btnv" (click)="botaoTruco1()">1</ion-button> </ion-col>
+    <ion-col size="1.5"  offset="2"><ion-button class="btnv" (click)="botaoTruco3()">3</ion-button></ion-col>
+    <ion-col size="1.5"  offset="2.2"><ion-button class="btnv" (click)="botaoTruco6()">6</ion-button></ion-col>
   </ion-row>
   <ion-row class="row2 ion-text-center">
-    <ion-col  size="2" offset="4"><ion-button class="bt2" (click)="botaoTruco9()">9</ion-button></ion-col>
-    <ion-col  size="2"><ion-button class="bt2" (click)="botaoTruco12()">12</ion-button></ion-col>
+    <ion-col size="1.5" offset="3"><ion-button class="bt2" (click)="botaoTruco9()">9</ion-button></ion-col>
+    <ion-col size="1.5" offset="2"><ion-button class="bt2" (click)="botaoTruco12()">12</ion-button></ion-col>
   </ion-row>
 </ion-grid>
 
@@ -27,16 +27,16 @@
   <ion-label>Time 2</ion-label>
 </ion-row>
   <ion-row class="add">
-    <ion-col><ion-button (click)="btadd1()"><ion-icon name="add"/></ion-button></ion-col>
-    <ion-col><ion-button (click)="btadd2()"><ion-icon name="add"/></ion-button></ion-col>
+    <ion-col><ion-button (click)="btadd1()"><ion-icon name="add" /></ion-button></ion-col>
+    <ion-col><ion-button (click)="btadd2()"><ion-icon name="add" /></ion-button></ion-col>
   </ion-row>
   <ion-row class="number">
     <ion-col>{{v1}}</ion-col>
     <ion-col>{{v2}}</ion-col>
   </ion-row>
   <ion-row class="btar">
-    <ion-col><ion-button (click)="btr1()"><ion-icon name="remove"/></ion-button></ion-col>
-    <ion-col><ion-button (click)="btr2()"><ion-icon name="remove"/></ion-button></ion-col>
+    <ion-col><ion-button (click)="btr1()"><ion-icon name="remove" /></ion-button></ion-col>
+    <ion-col><ion-button (click)="btr2()"><ion-icon name="remove" /></ion-button></ion-col>
   </ion-row>
 </ion-grid>
 
@@ -45,8 +45,11 @@
   <ion-card-header>
     <ion-card-title class="ion-text-center">PARTIDAS
       <ion-icon name="ribbon-outline" color="warning"></ion-icon>
+      <div class="linha">-----------------------------</div>
     </ion-card-title>
+
   </ion-card-header>
+
   <ion-card-content>
     <ion-row  class="ion-text-center">
       <ion-col>
